@@ -74,10 +74,35 @@ Reference files directly:
 ### CDN-style usage (GitHub Pages example)
 
 ```html
-<link rel="stylesheet" href="https://username.github.io/repo/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tuaxong/static@main/css/main.css">
+<img src="https://raw.githubusercontent.com/tuaxong/static/main/img/0199f700c4004193a8fe8bd12bc8af00.png"alt="Sample Image">
+----------------------------------------------------------------------------------------------------------------------------
+Use font via CSS (@font-face)
+@font-face {
+  font-family: "PhetsarathOT";
+  src: url("https://cdn.jsdelivr.net/gh/tuaxong/static@main/fonts/Phetsarath_OT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "PhetsarathOT", sans-serif;
+}
+
+**************************************************************************************************************************
+External CSS file (recommended)
+@font-face {
+  font-family: "PhetsarathOT";
+  src: url("https://cdn.jsdelivr.net/gh/tuaxong/static@main/fonts/Phetsarath_OT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+<link rel="stylesheet" href="fonts.css">
+
 ```
 
----
+-------------------------------------------------------------------------------------------------------------------------------
 
 ## ⚡ Design Principles
 
